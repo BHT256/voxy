@@ -29,4 +29,7 @@ jobs:
         with:
           name: voxy-artifacts
           path: build/libs/*.jar
+                !versions/*/build/libs/*-sources.jar
+                !versions/*/build/libs/*-dev.jar
           archive: false
+          if-no-files-found: error
